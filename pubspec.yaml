@@ -20,7 +20,7 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.14.3
 
-# আইকন কনফিগারেশন (নিশ্চিত করুন assets ফোল্ডারে icon.png ফাইলটি আছে)
+
 flutter_launcher_icons:
   android: true
   ios: true
@@ -29,6 +29,6 @@ flutter_launcher_icons:
 flutter:
   uses-material-design: true
 
-  # আপনার অ্যাপের ভেতরে লোগো ব্যবহারের জন্য নিচের অংশটুকু আন-কমেন্ট করে দিলাম
+  
   assets:
     - assets/icon.png
