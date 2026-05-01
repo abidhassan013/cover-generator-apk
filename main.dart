@@ -141,8 +141,8 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
-// PDF জেনারেশন ফাংশনটি এখন ক্লাসের বাইরে একদম নিচে থাকবে
-// এই ফাংশনটিতে উচ্চতা (height) বাড়িয়ে দেওয়া হয়েছে
+
+
 Future<void> generatePdf(Map<String, String> data) async {
   final pdf = pw.Document();
 
@@ -167,14 +167,14 @@ Future<void> generatePdf(Map<String, String> data) async {
                 pw.SizedBox(height: 5),
                 pw.Text("Assignment ${data['assignmentNo']}", style: pw.TextStyle(fontSize: 18, fontWeight: pw.FontWeight.bold)),
 
-                pw.SizedBox(height: 80), // টাইটেলের আগে একটু গ্যাপ
+                pw.SizedBox(height: 80), 
 
                 // Course Info
                 pw.Text("Course Title: ${data['courseTitle']}", style: pw.TextStyle(fontSize: 18, fontWeight: pw.FontWeight.bold)),
                 pw.SizedBox(height: 5),
                 pw.Text("Course Code: ${data['courseCode']}", style: pw.TextStyle(fontSize: 16, fontWeight: pw.FontWeight.bold)),
 
-                // এখানে উচ্চতা ৬০ থেকে বাড়িয়ে ১৮০ করা হয়েছে যাতে নিচের অংশটি আরও নিচে নামে
+                
                 pw.SizedBox(height: 180),
 
                 // Submitted To & By Row
